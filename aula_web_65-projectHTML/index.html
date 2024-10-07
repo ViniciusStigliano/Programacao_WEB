@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+<html lang="en">
+  <!-- Define o idioma da página como inglês -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajusta a página para dispositivos móveis, garantindo que ela se ajuste à largura da tela -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Linka um arquivo de estilo CSS externo -->
+    <title>Document</title>
+    <!-- Define o título da página -->
+  </head>
+
+  <body>
+    <!-- Corpo principal da página HTML -->
+
+    <header>
+      <!-- Header - Uso: É usado para definir o cabeçalho de uma página ou de uma seção específica.
+      Onde usar: Normalmente, no topo da página ou no início de uma seção de conteúdo.
+      O que incluir: Pode conter o título principal, logotipo, menus de navegação, e introduções.-->
+      <h1>Blog do código</h1>
+      <!-- Título principal do site -->
+      <p id="header-tagline"><em>Aqui estamos aprendendo a codar</em></p>
+      <!-- Subtítulo do cabeçalho, com o texto em itálico -->
+      <nav>
+        <!-- Nav - Uso: Define uma área de navegação na página, geralmente um menu de links para outras seções ou páginas.
+        Onde usar: Pode ser usado no <header> para um menu principal ou em outras áreas da página para navegação secundária.
+        O que incluir: Links para páginas importantes, seções do site ou até mesmo âncoras para navegar em partes da mesma página. -->
+        <ul>
+          <li>
+            <a href="/aula_web_45-47/index.html">Aprender HTML</a>
+            <!-- Link para a aula de HTML -->
+          </li>
+          <li>
+            <a href="/aula_web_60-projectHTML/index.html">Aprender CSS</a>
+            <!-- Link para a aula de CSS -->
+          </li>
+          <li>
+            <a href="/aula_web_62-64/index.html">Aprender JavaScript</a>
+            <!-- Link para a aula de JavaScript -->
+          </li>
+        </ul>
+        <!-- Lista não ordenada de itens de navegação -->
+      </nav>
+    </header>
+
+    <div id="article">
+      <!-- Div - Uso principal: Para criar contêineres ou blocos de conteúdo. Você pode usá-la para agrupar elementos HTML, permitindo aplicar estilos CSS ou scripts JavaScript em conjunto.
+      Onde usar: Sempre que precisar de um contêiner genérico para agrupar outros elementos (parágrafos, imagens, links, etc.). O <div> serve como uma ferramenta de layout, mas não diz nada sobre o conteúdo agrupado. 
+      É ideal quando não há uma tag mais semântica apropriada, como <section>, <article>, ou <aside>.
+      O que incluir: Você pode incluir qualquer elemento dentro de um <div>, como textos, imagens, links, listas, ou até mesmo outras <div>. Ele é uma caixa flexível para agrupar partes da interface. -->
+      <article class="article-header">
+        <!-- Article - Uso: Para definir um conteúdo independente e autônomo dentro da página, como um post de blog, um artigo de revista ou uma entrada em fórum.
+        Onde usar: Sempre que o conteúdo puder ser distribuído de maneira independente (como um post de blog que pode ser lido separadamente).
+        O que incluir: Títulos, parágrafos, imagens, listas, seções. Pode incluir outras tags como <section>, <header>, <footer>. -->
+        <section>
+          <!-- Section - Uso: Usado para agrupar uma seção de conteúdo relacionada, como uma parte de um artigo ou uma área temática.
+          Onde usar: Sempre que o conteúdo pode ser dividido em seções coerentes e com tema específico.
+          O que incluir: Pode conter títulos, parágrafos, imagens, listas e qualquer outro conteúdo. Normalmente usado dentro de um <article> ou outra estrutura maior. -->
+          <h1>Por que aprender HTML?</h1>
+          <!-- Título da seção do artigo -->
+          <em
+            >Postado em <time datetime="">02 de Agosto</time>&bull;
+            <!-- Tag <time> usada para definir uma data ou hora -->
+            <!-- Span - Uso: Para estilizar partes específicas do conteúdo inline (em linha), sem afetar o layout geral. Ele não adiciona nenhuma estrutura significativa, sendo usado puramente para aplicar estilos ou marcar pequenas porções de texto.
+            Onde usar: Quando você precisa aplicar estilos específicos a uma palavra, frase ou parte de uma linha sem alterar o fluxo do texto.
+            O que incluir: Texto ou conteúdo que precisa ser destacado ou estilizado de maneira especial. -->
+            <span id="author">Escrito por Vini</span></em
+          >
+          <!-- Texto em itálico com a data e o autor -->
+        </section>
+
+        <section>
+          <!-- Outra seção do artigo -->
+          <p class="article-text">
+            <!-- Parágrafo de texto com classe para estilo -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            maximus urna dui, id interdum libero faucibus a...
+          </p>
+          <em>Postado em <strong>Coders</strong></em>
+          <!-- Texto final da seção em itálico e com "Coders" em negrito -->
+        </section>
+      </article>
+    </div>
+
+    <div id="article">
+      <!-- Repetição do artigo, mas com conteúdo sobre CSS -->
+      <article class="article-header">
+        <section>
+          <h1>Por que aprender CSS?</h1>
+          <em
+            >Postado em <time datetime="">05 de Agosto</time>&bull;
+            <span id="author">Escrito por Vini</span></em
+          >
+        </section>
+
+        <section>
+          <p class="article-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+          </p>
+          <em>Postado em <strong>Coders</strong></em>
+        </section>
+      </article>
+    </div>
+
+    <br />
+    <!-- Quebra de linha para espaçamento -->
+
+    <aside>
+      <!-- Aside - Uso: Representa conteúdo relacionado ao conteúdo principal, como barras laterais, anúncios ou informações complementares.
+      Onde usar: Usado dentro de uma página para exibir conteúdo auxiliar, como um resumo ou um box de informações laterais.
+      O que incluir: Pode incluir biografias de autores, links para artigos relacionados, ou outros blocos de informações que complementam o conteúdo. -->
+      <strong>Sobre esse site</strong>
+      <!-- Texto em negrito -->
+      <p class="article-text">
+        Sed enim eros, laoreet eget elit finibus, fermentum consequat mi...
+      </p>
+      <!-- Parágrafo explicando sobre o site -->
+    </aside>
+
+    <footer>
+      <!-- Footer - Uso: Para definir o rodapé da página ou de uma seção específica. Contém informações finais ou secundárias.
+      Onde usar: Geralmente, no final da página ou de um conteúdo grande como um artigo.
+      O que incluir: Pode incluir informações de copyright, links para política de privacidade, ou créditos. -->
+      <em
+        ><small><strong>&copy; by Vini</strong></small></em
+      >
+      <!-- Texto do rodapé com copyright -->
+    </footer>
+  </body>
+</html>

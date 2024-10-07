@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Define que o documento está escrito em HTML5 -->
+  <head>
+    <!-- Define a codificação de caracteres como UTF-8 para garantir que caracteres especiais sejam exibidos corretamente -->
+    <meta charset="UTF-8" />
+
+    <!-- Define a viewport para garantir que o site seja responsivo e exibido corretamente em diferentes dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Define o título da página que aparecerá na aba do navegador -->
+    <title>Aulas HTML</title>
+  </head>
+
+  <body>
+    <!-- Título principal da página (Heading 1) -->
+    <h1>Aqui temos exemplos de headings</h1>
+
+    <!-- Exemplo de diferentes níveis de cabeçalhos de 2 a 6 (h2 a h6) -->
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Parágrafo de texto simples -->
+    <p>Aqui temos exemplos pulando linhas</p>
+
+    <!-- Parágrafo com texto em itálico usando a tag <em> (ênfase) -->
+    <p><em>Aqui temos exemplos de itálico</em></p>
+
+    <!-- Parágrafo com texto em negrito usando a tag <strong> (importância) -->
+    <p><strong>Aqui temos exemplos de negrito</strong></p>
+
+    <!-- Link externo que leva ao Google -->
+    <p><a href="https://www.google.com">Referência externa</a></p>
+
+    <!-- Link interno que leva à página "index.html" no mesmo diretório -->
+    <p><a href="index.html">Referência interna</a></p>
+
+    <!-- Quebras de linha (<br>) seguidas de imagens com atributos src e alt (endereço e descrição da imagem) -->
+    <br /><img src="./images/carrots.jpg" alt="Cenoura" /> <br /><img
+      src="./images/kale.jpg"
+      alt="Kale" />
+    <br /><img src="./images/potato.jpg" alt="Batatas" />
+
+    <!-- Lista não ordenada (com marcadores) -->
+    <ul>
+      <li>Não organizada 1</li>
+      <li>Não organizada 2</li>
+      <li>Não organizada 3</li>
+    </ul>
+
+    <!-- Lista ordenada (numerada) -->
+    <ol>
+      <li>Organizada 1</li>
+      <li>Organizada 2</li>
+      <li>Organizada 3</li>
+    </ol>
+
+    <!-- Lista de definição -->
+    <dl>
+      <!-- Termo a ser definido -->
+      <dt>Descrição</dt>
+      <!-- Definição do termo -->
+      <dd>Uma descrição</dd>
+    </dl>
+
+    <!-- Tabela com cabeçalho e três linhas de dados -->
+    <table>
+      <tr>
+        <!-- Cabeçalhos da tabela -->
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+      <tr>
+        <!-- Dados da primeira linha -->
+        <td>Vinin</td>
+        <td>27</td>
+        <td>São Paulo</td>
+      </tr>
+      <tr>
+        <!-- Dados da segunda linha -->
+        <td>Vinao</td>
+        <td>28</td>
+        <td>São Paulo</td>
+      </tr>
+      <tr>
+        <!-- Dados da terceira linha -->
+        <td>Vini</td>
+        <td>29</td>
+        <td>São Paulo</td>
+      </tr>
+    </table>
+
+    <!-- Formulário com campo de entrada de texto, e-mail, senha, rádio buttons e checkboxes -->
+    <form action>
+      <fieldset>
+        <!-- Agrupamento de campos do formulário com legenda -->
+        <legend>Profile Info</legend>
+
+        <!-- Campo para nome -->
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="Name"
+          id="name"
+          placeholder="Enter your name" />
+        <br />
+
+        <!-- Campo para e-mail -->
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="vini@gmail.com" />
+        <br />
+
+        <!-- Campo para senha -->
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <br /><br />
+
+        <!-- Radio buttons para gênero, permitindo escolher apenas um, já que compartilham o mesmo atributo name -->
+        <label for="gender">Gender</label><br />
+        <input type="radio" name="gender" id="radio" /> Female <br />
+        <input type="radio" name="gender" id="radio" /> Male <br /><br />
+
+        <!-- Checkboxes para indicar os tipos de computador, onde múltiplas seleções são permitidas -->
+        <label for="computer">Type of computers</label>
+        <input type="checkbox" name="computer" id="checkbox1" />I have a laptop
+        <input type="checkbox" name="computer" id="checkbox2" />I have a desktop
+        <br /><br />
+
+        <!-- Lista suspensa (dropdown) para selecionar a faixa etária -->
+        <label for="age">Age</label>
+        <select name="age" id="age">
+          <option value>0 - 20</option>
+          <option value>20 - 40</option>
+          <option value>40 - 50</option>
+          <option value>50 +</option>
+        </select>
+        <br /><br />
+
+        <!-- Campo de texto para mensagem -->
+        <label for="message">Message</label><br />
+        <textarea name="message" id="message"></textarea>
+        <br /><br />
+
+        <!-- Botão para enviar o formulário -->
+        <input type="submit" value="Submit" />
+
+        <!-- Botão para resetar os campos do formulário -->
+        <input type="reset" value="Clear that info" />
+      </fieldset>
+    </form>
+    <br />
+    <!-- Exemplos de caracteres especiais usando entidades HTML -->
+    &abreve; &s
+  </body>
+</html>

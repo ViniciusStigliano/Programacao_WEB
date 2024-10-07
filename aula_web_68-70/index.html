@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Define o charset como UTF-8, que é a codificação de caracteres padrão para a maioria das páginas web -->
+    <meta charset="UTF-8" />
+
+    <!-- Define a tag para ajustar o layout da página de acordo com a largura do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Esta condicional é usada para corrigir problemas de compatibilidade de HTML5 com o Internet Explorer -->
+    <!--[if IE]>
+      <!-- Inclui o script do html5shim para suportar tags de HTML5 no IE -->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Define o título da página que aparecerá na aba do navegador -->
+    <title>Fazendo HTML funcionar no IE, forms e datas attributes</title>
+  </head>
+  <body>
+    <!-- Título principal da página -->
+    <h1>Inputs de HTML 5</h1>
+
+    <!-- Associar sempre um label ao input facilita a usabilidade e acessibilidade -->
+    <label for="fname">Clique nesse label</label>
+    <!-- Campo de texto simples -->
+    <input type="text" name="" id="fname" />
+
+    <br />
+
+    <label for="formsearch">Formulário</label>
+    <!-- Campo de busca -->
+    <input type="search" name="" id="formsearch" />
+
+    <br />
+
+    <label for="email">E-mail</label>
+    <!-- Campo específico para input de e-mail -->
+    <input type="email" name="" id="email" />
+
+    <br />
+
+    <label for="url">Url</label>
+    <!-- Campo específico para input de URLs -->
+    <input type="url" name="" id="url" />
+
+    <br />
+
+    <label for="number">Número</label>
+    <!-- Campo específico para input de números -->
+    <input type="number" name="" id="number" />
+
+    <br />
+
+    <label for="date">Data</label>
+    <!-- Campo específico para input de datas -->
+    <input type="date" name="" id="date" />
+
+    <br />
+
+    <label for="month">Mês</label>
+    <!-- Campo específico para selecionar um mês -->
+    <input type="month" name="" id="month" />
+
+    <br />
+
+    <label for="week">Semana</label>
+    <!-- Campo específico para selecionar uma semana -->
+    <input type="week" name="" id="week" />
+
+    <br />
+
+    <label for="time">Tempo</label>
+    <!-- Campo específico para input de horário (HH:MM) -->
+    <input type="time" name="" id="time" />
+
+    <br />
+
+    <label for="datetime">Outro tempo</label>
+    <!-- Campo de input para selecionar uma data e horário juntos -->
+    <input type="datetime" name="" id="datetime" />
+
+    <br />
+
+    <label for="datetimelocal">Outro tempo</label>
+    <!-- Campo de input para selecionar uma data e horário local (baseado no fuso horário do usuário) -->
+    <input type="datetime-local" name="" id="datetimelocal" />
+
+    <br />
+
+    <label for="color">Cor</label>
+    <!-- Campo para selecionar uma cor através de um seletor visual -->
+    <input type="color" name="" id="color" />
+
+    <br />
+
+    <!-- Texto explicativo com um link externo para suporte a HTML5 no Internet Explorer -->
+    <p>
+      Comente o código abaixo na tag <code>&lt;head&gt;</code> que vai funcionar
+      <a
+        href="http://html5shim.googlecode.com/svn/trunk/html5.js"
+        target="_blank"
+        >HTML IE</a
+      >.
+    </p>
+
+    <!-- Exemplo de uso de atributos personalizados (data-attributes) para armazenar dados no HTML -->
+    <div
+      id="customID"
+      class="customClass"
+      data-criando="criando"
+      data-algo="algo"
+      data-max="99"
+      data-min="1"
+    >
+      Algum texto vai aqui
+    </div>
+  </body>
+</html>
